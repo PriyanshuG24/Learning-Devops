@@ -68,15 +68,10 @@ jobs:
 
             cd "${EC2_APP_DIR}" || exit 1
 
-            # Fetch latest code
             git fetch --all
             git reset --hard origin/main
 
-            # Rebuild & restart containers
-            docker compose up -d --build
-
-            # Clean unused images
-            docker image prune -f
-
-            docker compose ps
+            sudo docker compose up -d --build
+            sudo docker image prune -f
+            sudo docker compose ps
           EOF
