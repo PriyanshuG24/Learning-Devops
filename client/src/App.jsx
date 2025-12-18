@@ -67,6 +67,7 @@ function App() {
         <div className="max-w-4xl mx-auto px-4 py-6">
           <div className="flex justify-between items-center">
             <div>
+              <h1 className='text-sm font-bold text-gray-400'>Running through jenkins pipeline</h1>
               <h1 className="text-3xl font-bold text-gray-900">Task Editor </h1>
               <p className="text-gray-600 mt-1">Simple task management for DevOps Project</p>
             </div>
